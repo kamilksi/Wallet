@@ -17,6 +17,7 @@ struct ExpensesView: View {
         
             VStack{
                 //MARK: LIST
+                Divider()
                 ExpensesListView()
                 
             }

@@ -13,11 +13,11 @@ struct ScrollButtonsView: View {
             LazyHStack(alignment: .top, spacing: 10) {
                 ForEach(1...5, id: \.self) {_ in
                     ButtonCategoryView()
+                        .padding()
                 }
             }
         }//MARK: SCROLL VIEW
         .frame(height: 60)
-        .padding()
     }
 }
 

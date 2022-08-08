@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ExpensesListView: View {
     var body: some View {
-        VStack(alignment: .leading){
+        VStack{
             
             
             ScrollButtonsView()
+                .edgesIgnoringSafeArea(.horizontal)
             ScrollView{
                 ForEach(0..<14){_ in
                     Divider()
@@ -31,9 +32,10 @@ struct ExpensesListView: View {
                 }//MARK: LOOP
                 
             }//MARK: SCROLLVIEW
+            .padding()
             
         }//MARK: VSTACK
-        .padding()
+     
     }
 }
 
