@@ -12,6 +12,7 @@ struct ExpensesListView: View {
         VStack(alignment: .leading){
             
             
+            ScrollButtonsView()
             ScrollView{
                 ForEach(0..<14){_ in
                     Divider()

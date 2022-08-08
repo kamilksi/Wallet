@@ -10,7 +10,20 @@ import SwiftUI
 struct ButtonCategoryView: View {
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Button {
+                
+            } label: {
+                Text("Jedzenie")
+                    .fontWeight(.black)
+                    .foregroundColor(.primary)
+                    .padding()
+            }.overlay{
+                Capsule()
+                    .foregroundColor(.secondary)
+                    .frame(width:88, height: 44)
+                
+            }
+
         }
     }
 }
