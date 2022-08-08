@@ -8,20 +8,24 @@
 import SwiftUI
 
 struct ButtonCategoryView: View {
+    var text: String = "Zakupy"
     var body: some View {
         VStack {
             Button {
                 
             } label: {
-                Text("Jedzenie")
+                Text(text)
                     .fontWeight(.black)
                     .foregroundColor(.primary)
-                    .padding()
-            }.overlay{
+
+            }
+            
+            .overlay{
                 Capsule()
-                    .foregroundColor(.secondary)
-                    .frame(width:88, height: 44)
+                    .opacity(0.2)
                 
+                    .frame(width:88, height: 44)
+                    
             }
 
         }
