@@ -97,12 +97,12 @@
 		6822C249289F7C380061544A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6890C34328A306D40020D354 /* CommonViews */,
 				6822C259289F810B0061544A /* Chart */,
 				6822C255289F7D890061544A /* TotalView.swift */,
 				6822C262289F8C300061544A /* DashboardListView.swift */,
 				688D754128A026FD0065DE4A /* SettingsView.swift */,
 				688D754728A02D640065DE4A /* ExpensesListView.swift */,
-				688D754928A02F660065DE4A /* ButtonCategoryView.swift */,
 				68BC152528A0E238006944BB /* AddExpenseView.swift */,
 				68BC152728A0E6CB006944BB /* ScrollButtonsView.swift */,
 			);
@@ -136,6 +136,14 @@
 				6822C26528A020690061544A /* ExpensesModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		6890C34328A306D40020D354 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				688D754928A02F660065DE4A /* ButtonCategoryView.swift */,
+			);
+			path = CommonViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
