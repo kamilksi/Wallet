@@ -19,9 +19,12 @@ struct AddExpenseView: View {
                 ButtonCategoryView(text: "Expense")
                 Spacer()
             }
+            CategoryPickerView()
+            
             TextField("Amount", text: $amount)
                 .padding()
                 .frame(width: 300, height: 50)
+                .background(.ultraThickMaterial)
                 
             //MARK: Amount Field
             //MARK: Category grid
