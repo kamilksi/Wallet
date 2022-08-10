@@ -10,13 +10,14 @@ import SwiftUI
 struct ExpensesView: View {
     //MARK: PROPERTY
     @State private var searchField: String = ""
+    @State private var isAddExpensePresented: Bool = false
     
     var body: some View {
         NavigationView{
         
             VStack{
-                //MARK: BUTTONS
                 //MARK: LIST
+                Divider()
                 ExpensesListView()
                 
             }
@@ -27,6 +28,13 @@ struct ExpensesView: View {
                 HStack{
                     Text("Add")
                     Image(systemName: "plus.circle")
+                        .onTapGesture {
+                            isAddExpensePresented.toggle()
+                        }
+                        .sheet(isPresented: $isAddExpensePresented) {
+                            AddExpenseView()
+                        }
+                        
                 }
             }//MARK: Toolbar
         }//MARK: Navigation view
