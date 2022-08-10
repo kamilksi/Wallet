@@ -24,6 +24,8 @@
 		688D754A28A02F660065DE4A /* ButtonCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688D754928A02F660065DE4A /* ButtonCategoryView.swift */; };
 		6890C34928A382590020D354 /* SettingsLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890C34828A382590020D354 /* SettingsLabelView.swift */; };
 		6890C34B28A384AC0020D354 /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890C34A28A384AC0020D354 /* SettingsRowView.swift */; };
+		6890C35328A43EC90020D354 /* CategoryPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890C35228A43EC90020D354 /* CategoryPickerView.swift */; };
+		6890C35528A43EF00020D354 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6890C35428A43EF00020D354 /* CategoryModel.swift */; };
 		68BC152628A0E238006944BB /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC152528A0E238006944BB /* AddExpenseView.swift */; };
 		68BC152828A0E6CB006944BB /* ScrollButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC152728A0E6CB006944BB /* ScrollButtonsView.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +49,8 @@
 		688D754928A02F660065DE4A /* ButtonCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCategoryView.swift; sourceTree = "<group>"; };
 		6890C34828A382590020D354 /* SettingsLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsLabelView.swift; sourceTree = "<group>"; };
 		6890C34A28A384AC0020D354 /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		6890C35228A43EC90020D354 /* CategoryPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerView.swift; sourceTree = "<group>"; };
+		6890C35428A43EF00020D354 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
 		68BC152528A0E238006944BB /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
 		68BC152728A0E6CB006944BB /* ScrollButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollButtonsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,13 +106,13 @@
 		6822C249289F7C380061544A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6890C35128A43E940020D354 /* Add */,
 				6890C34728A382320020D354 /* Settings */,
 				6890C34328A306D40020D354 /* CommonViews */,
 				6822C259289F810B0061544A /* Chart */,
 				6822C255289F7D890061544A /* TotalView.swift */,
 				6822C262289F8C300061544A /* DashboardListView.swift */,
 				688D754728A02D640065DE4A /* ExpensesListView.swift */,
-				68BC152528A0E238006944BB /* AddExpenseView.swift */,
 				68BC152728A0E6CB006944BB /* ScrollButtonsView.swift */,
 			);
 			path = Views;
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				6822C26528A020690061544A /* ExpensesModel.swift */,
+				6890C35428A43EF00020D354 /* CategoryModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +171,15 @@
 				6890C34A28A384AC0020D354 /* SettingsRowView.swift */,
 			);
 			path = Settings;
+			sourceTree = "<group>";
+		};
+		6890C35128A43E940020D354 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				68BC152528A0E238006944BB /* AddExpenseView.swift */,
+				6890C35228A43EC90020D354 /* CategoryPickerView.swift */,
+			);
+			path = Add;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +256,7 @@
 				6822C251289F7D3F0061544A /* DashboardView.swift in Sources */,
 				6822C25F289F81330061544A /* BarChartsView.swift in Sources */,
 				6822C23E289F7BE90061544A /* ContentView.swift in Sources */,
+				6890C35328A43EC90020D354 /* CategoryPickerView.swift in Sources */,
 				688D754A28A02F660065DE4A /* ButtonCategoryView.swift in Sources */,
 				6822C261289F88F40061544A /* ActivityView.swift in Sources */,
 				6822C256289F7D890061544A /* TotalView.swift in Sources */,
@@ -253,6 +268,7 @@
 				68BC152828A0E6CB006944BB /* ScrollButtonsView.swift in Sources */,
 				68BC152628A0E238006944BB /* AddExpenseView.swift in Sources */,
 				6822C263289F8C300061544A /* DashboardListView.swift in Sources */,
+				6890C35528A43EF00020D354 /* CategoryModel.swift in Sources */,
 				6890C34928A382590020D354 /* SettingsLabelView.swift in Sources */,
 				688D754228A026FD0065DE4A /* SettingsView.swift in Sources */,
 			);
