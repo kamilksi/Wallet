@@ -10,7 +10,6 @@ import SwiftUI
 
 struct Expenses: Identifiable, Codable{
     let id: UUID
-    let category: String
-    let description: String
-    let cost: String
+    let name: String
+    let cost: Double
 }
