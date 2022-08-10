@@ -17,27 +17,23 @@ struct ButtonCategoryView: View {
                 Text(text)
                     .fontWeight(.black)
                     .foregroundColor(.primary)
-
-            }
-            
-            .overlay{
-                Capsule()
-                    .opacity(0.2)
                 
-                    .frame(width:88, height: 44)
-                    
             }
-
+            .frame(width: 88, height: 44)
+            .background(.ultraThickMaterial)
+            .cornerRadius(12)
         }
+        
     }
 }
+
 
 struct ButtonCategoryView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             ButtonCategoryView()
                 .previewLayout(.sizeThatFits)
-            .padding()
+                .padding()
             ButtonCategoryView()
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
