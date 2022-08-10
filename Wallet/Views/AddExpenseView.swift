@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct AddExpenseView: View {
+    @State private var amount: String = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            //MARK: HEADER
+            HStack{
+                Spacer()
+                ButtonCategoryView(text: "Income")
+                Spacer()
+                ButtonCategoryView(text: "Expense")
+                Spacer()
+            }
+            TextField("Amount", text: $amount)
+                .padding()
+                .frame(width: 300, height: 50)
+                
+            //MARK: Amount Field
+            //MARK: Category grid
+            //MARK: Expense
+            //MARK: Add button
+        }
     }
 }
 
