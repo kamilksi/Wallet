@@ -12,8 +12,7 @@ struct ExpensesListView: View {
         VStack{
             
             
-            ScrollButtonsView()
-                .edgesIgnoringSafeArea(.horizontal)
+            CategoryPickerView()
             ScrollView{
                 ForEach(0..<14){_ in
                     Divider()
@@ -32,8 +31,7 @@ struct ExpensesListView: View {
                 }//MARK: LOOP
                 
             }//MARK: SCROLLVIEW
-            .padding()
-            
+            .padding(.horizontal, 10)
         }//MARK: VSTACK
      
     }
