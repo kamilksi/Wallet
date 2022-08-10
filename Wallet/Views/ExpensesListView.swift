@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ExpensesListView: View {
+    //MARK: PROPERTIES
+    var expenseImage: String = ""
+    var categoryExpense: String = ""
+    var descriptionExpense: String = ""
+    var cost: String = ""
     var body: some View {
         VStack{
             
@@ -17,15 +22,15 @@ struct ExpensesListView: View {
                 ForEach(0..<14){_ in
                     Divider()
                     HStack {
-                        Image(systemName: "plus.circle")
+                        Image(systemName: expenseImage)
                         VStack {
-                            Text("Expense").fontWeight(.black)
+                            Text(categoryExpense).fontWeight(.black)
                             Spacer()
-                            Text("14 hours ago")
+                            Text(descriptionExpense)
                         }
                         .padding(.horizontal, 20)
                         Spacer()
-                        Text("19.99$")
+                        Text(cost)
                             .fontWeight(.black)
                     }
                 }//MARK: LOOP
@@ -33,12 +38,12 @@ struct ExpensesListView: View {
             }//MARK: SCROLLVIEW
             .padding(.horizontal, 10)
         }//MARK: VSTACK
-     
+        
     }
 }
 
 struct ExpensesListView_Previews: PreviewProvider {
     static var previews: some View {
-        ExpensesListView()
+        ExpensesListView(expenseImage: "plus.circle", categoryExpense: "Grocery", descriptionExpense: "Chips,bacon,water", cost: "25,41")
     }
 }
