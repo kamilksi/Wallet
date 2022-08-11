@@ -18,7 +18,7 @@ struct SettingsView: View {
                             SettingsLabelView(labelText: "Wallet", labelImage: "info.circle")
                     ) {
                         Divider().padding(.vertical, 4)
-                        Text("I created this app to help you with manage your own expenses.")
+                        Text("I have created this app to help you with manage your own expenses.")
                             .font(.footnote)
                     }
                 }
