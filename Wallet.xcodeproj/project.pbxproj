@@ -104,13 +104,11 @@
 		6822C249289F7C380061544A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				68D4CC6428A550BE00A1F84E /* Dashboard */,
+				6890C34328A306D40020D354 /* CommonViews */,
 				6890C35128A43E940020D354 /* Add */,
 				6890C34728A382320020D354 /* Settings */,
-				6890C34328A306D40020D354 /* CommonViews */,
 				6822C259289F810B0061544A /* Chart */,
-				6822C255289F7D890061544A /* TotalView.swift */,
-				6822C262289F8C300061544A /* DashboardListView.swift */,
-				688D754728A02D640065DE4A /* ExpensesListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -177,6 +175,16 @@
 				6890C35228A43EC90020D354 /* CategoryPickerView.swift */,
 			);
 			path = Add;
+			sourceTree = "<group>";
+		};
+		68D4CC6428A550BE00A1F84E /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				688D754728A02D640065DE4A /* ExpensesListView.swift */,
+				6822C255289F7D890061544A /* TotalView.swift */,
+				6822C262289F8C300061544A /* DashboardListView.swift */,
+			);
+			path = Dashboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

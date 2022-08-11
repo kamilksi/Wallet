@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct ButtonCategoryView: View {
-    var text: String = "Zakupy"
+    var text: String = ""
     var body: some View {
         VStack {
             Button {
-                
+
             } label: {
                 Text(text)
-                    .fontWeight(.black)
+                    .fontWeight(.semibold)
                     .foregroundColor(.primary)
                 
             }
@@ -31,7 +31,7 @@ struct ButtonCategoryView: View {
 struct ButtonCategoryView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ButtonCategoryView()
+            ButtonCategoryView(text: "Income")
                 .previewLayout(.sizeThatFits)
                 .padding()
             ButtonCategoryView()
