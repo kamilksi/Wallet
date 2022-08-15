@@ -8,19 +8,32 @@
 import SwiftUI
 
 struct ButtonCategoryView: View {
+    var text: String = ""
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Button {
+
+            } label: {
+                Text(text)
+                    .fontWeight(.semibold)
+                    .foregroundColor(.primary)
+                
+            }
+            .frame(width: 88, height: 44)
+            .background(.ultraThickMaterial)
+            .cornerRadius(12)
         }
+        
     }
 }
+
 
 struct ButtonCategoryView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ButtonCategoryView()
+            ButtonCategoryView(text: "Income")
                 .previewLayout(.sizeThatFits)
-            .padding()
+                .padding()
             ButtonCategoryView()
                 .preferredColorScheme(.dark)
                 .previewLayout(.sizeThatFits)
