@@ -7,3 +7,12 @@
 
 import SwiftUI
 
+struct CategoryModel: Encodable, Identifiable {
+    let id: UUID
+    let name: String
+    let categoryImage: String
+
+}
+
+let sampleCategory: [CategoryModel] = [.init(id: UUID(), name: "Groceries", categoryImage: "cart")]
+
