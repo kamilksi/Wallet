@@ -14,5 +14,9 @@ struct CategoryModel: Encodable, Identifiable {
 
 }
 
-let sampleCategory: [CategoryModel] = [.init(id: UUID(), name: "Groceries", categoryImage: "cart")]
+let sampleCategory: [CategoryModel] = [
+    .init(id: UUID(), name: "Groceries", categoryImage: "cart"),
+    .init(id: UUID(), name: "Transport", categoryImage: "tram"),
+    .init(id: UUID(), name: "Utilities", categoryImage: "bag")
+]
 
