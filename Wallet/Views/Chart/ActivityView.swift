@@ -31,8 +31,6 @@ struct ActivityView: View {
                         .frame(width: 300, height: 300)
                         .cornerRadius(12)
                 }
-            
-            Divider()
         }
     }
 }
