@@ -37,6 +37,13 @@ struct LoginView: View {
                             .clipShape(Capsule())
                     })
                     Spacer()
+                    NavigationLink(destination: RegisterView().navigationBarHidden(true), label: {
+                        HStack {
+                            Text("Don't have an account?")
+                            Text("Sign Up")
+                                .fontWeight(.bold)
+                        }.foregroundColor(.black)
+                    })
                 }.padding()
             }
         }
