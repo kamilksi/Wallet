@@ -20,7 +20,7 @@ struct AppTextField: View {
             }
         }
         .padding()
-        .background(Color(.init(gray: 0.5, alpha: 0.30)))
+        .background(Color(.init(white: 1, alpha: 0.30)))
         .clipShape(Capsule())
     }
 }

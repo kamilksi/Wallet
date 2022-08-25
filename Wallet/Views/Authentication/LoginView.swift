@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email = ""
+    @State private var password = ""
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            ZStack{
+                Color(red: 0.5, green: 0.6, blue: 0.7)
+                    .ignoresSafeArea()
+                VStack{
+                    Text("Wallet")
+                        .font(.largeTitle)
+                        .fontWeight(.black)
+                    Spacer()
+                    VStack(spacing: 20) {
+                        AppTextField(placeholderText: "Email", isSecureField: false, text: $email)
+                        AppTextField(placeholderText: "Password", isSecureField: true, text: $password)
+                    }
+                    Spacer()
+                }.padding()
+            }
+        }
     }
 }
 
