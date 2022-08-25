@@ -14,7 +14,7 @@ struct CustomButtonView: View {
             Text(buttonName)
                 .fontWeight(.semibold)
                 .foregroundColor(.black)
-                .frame(width: 350, height: 50)
+                .frame(width: 150, height: 50)
                 .background(Color(.init(white: 1, alpha: 0.15)))
                 .clipShape(Capsule())
 
