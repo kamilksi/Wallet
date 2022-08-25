@@ -10,6 +10,7 @@ import SwiftUI
 struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
         NavigationView{
             ZStack{
@@ -24,6 +25,17 @@ struct LoginView: View {
                         AppTextField(placeholderText: "Email", isSecureField: false, text: $email)
                         AppTextField(placeholderText: "Password", isSecureField: true, text: $password)
                     }
+                    Spacer()
+                    Button(action: {
+                        viewModel.login(withEmail: email, password: password)
+                    }, label: {
+                        Text("Log In")
+                            .foregroundColor(.black)
+                            .fontWeight(.semibold)
+                            .frame(width: 350, height: 50)
+                            .background(Color(.init(white: 1, alpha: 0.15)))
+                            .clipShape(Capsule())
+                    })
                     Spacer()
                 }.padding()
             }
