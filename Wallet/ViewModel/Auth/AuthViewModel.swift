@@ -7,6 +7,7 @@
 
 import SwiftUI
 import Firebase
+import FirebaseAuth
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User?
@@ -39,8 +40,10 @@ class AuthViewModel: ObservableObject {
             print("Sucessfully registered!")
         }
     }
+
     func signOut(){
-        do { try Auth.auth().signOut() }
-        catch { print("Already logged out") }
+        self.userSession = nil
+        try? Auth.auth().signOut()
+
     }
 }

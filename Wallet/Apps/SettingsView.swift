@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @EnvironmentObject var viewModel: AuthViewModel
     var body: some View {
         NavigationView{
             ScrollView{
@@ -22,7 +23,13 @@ struct SettingsView: View {
                             .font(.footnote)
                     }
                 }
-            }
+            }.navigationBarItems(trailing: Button(action: {
+                AuthViewModel.shared.signOut()
+            }, label: {
+                Text("Log Out")
+                    .font(.caption)
+                    .foregroundColor(.black)
+            }))
         }//MARK:  info view
     }
 }
