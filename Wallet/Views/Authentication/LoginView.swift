@@ -32,7 +32,7 @@ struct LoginView: View {
                         Text("Log In")
                             .foregroundColor(.black)
                             .fontWeight(.semibold)
-                            .frame(width: 350, height: 50)
+                            .frame(width: 150, height: 50)
                             .background(Color(.init(white: 1, alpha: 0.15)))
                             .clipShape(Capsule())
                     })
