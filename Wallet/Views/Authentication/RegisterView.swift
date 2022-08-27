@@ -27,7 +27,7 @@ struct RegisterView: View {
                     }
                     Spacer()
                     Button(action: {
-                        viewModel.login(withEmail: email, password: password)
+                        viewModel.register(withEmail: email, password: password)
                     }, label: {
                         Text("Sign Up")
                             .foregroundColor(.black)
@@ -37,9 +37,9 @@ struct RegisterView: View {
                             .clipShape(Capsule())
                     })
                     Spacer()
-                    NavigationLink(destination: RegisterView().navigationBarHidden(true), label: {
+                    NavigationLink(destination: LoginView().navigationBarHidden(true), label: {
                         HStack {
-                            Text("Don't have an account?")
+                            Text("Already have an account?")
                             Text("Log In")
                                 .fontWeight(.bold)
                         }.foregroundColor(.black)
